@@ -1,1 +1,2 @@
-# ATMS597-Project6-GroupB
+# ATMS 597 Project 6 Group B
+### Group Members: Carolina Bieri, Chu-Chun Chen, Jeffrey Thayer
