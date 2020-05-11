@@ -15,11 +15,13 @@ Daily soil moisture from the first two ground levels (0-7cm and 7-28cm) averaged
 ### Methods:
 Data are randomly split 70-30 into training and testing datasets. The accuracy of the neural networks and each regression technique is determined by the root mean squared error (RMSE) or Brier Skill Score (BSS). <br>
 
-We selected <b>multiple linear regression</b> and <b>random forest regression</b> as our baseline models. <br>
+We selected <b>multiple linear regression</b>, <b>random forest regression</b>, and <b>logistic regression</b> as our baseline models. <br>
 
 For the <b>multiple linear regression</b>, we used the default hyperparameters, and we calculated the RMSE to determine the prediction skill. <br>
 
 For the <b>random forest regression</b>, hyperparameter optimization was performed using RandomizedSearchCV for 300 random hyperparameter combinations. The prediction skill (i.e. RMSE) was then determined after running RandomForestRegressor using the best hyperparameter combination.
+
+For the <b>logistic regression</b>, we used the default hyperparameters, and we calculated the Brier Skill Score to determine the prediction skill. The classification threshold was the same as the threshold used in the neural network classification model. <br>
 
 For the <b> neural networks (NN) </b>, both regression and classification models were created. The NN regression model was run with a suite of hyperparameters to determine the hyperparameter values which yielded the best prediction. The same was done with the NN classification model. <br>
 
